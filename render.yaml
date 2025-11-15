@@ -1,0 +1,13 @@
+services:
+  - type: web
+    name: project2-part1-crud
+    runtime: node
+    repo: https://github.com/bennyasi/project2-part1-crud
+    branch: main
+    buildCommand: npm install
+    startCommand: npm start
+    envVars:
+      - key: PORT
+        value: 5000
+      - key: MONGODB_URI
+        sync: false
